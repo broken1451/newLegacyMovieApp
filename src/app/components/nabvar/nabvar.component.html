@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" [routerLink]="['/home']">Movies</a>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+        </ul>
+
+        <form class="d-flex" autocomplete="off" [formGroup]="form">
+          <input class="form-control me-2" type="search" placeholder="Buscar pelicula" formControlName="buscar" (keyup.enter)="buscarPelicula($event)" aria-label="Search">
+          <button class="btn btn-outline-success" type="button" (click)="buscar()">Buscar</button>
+        </form>
+
+        <!-- <form class="d-flex">
+          <input #text class="form-control me-2" type="search" placeholder="Buscar pelicula" (keyup.enter)="buscar(text.value)" aria-label="Search">
+          <button class="btn btn-outline-success" type="button" (click)="buscar(text.value)">Buscar</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>

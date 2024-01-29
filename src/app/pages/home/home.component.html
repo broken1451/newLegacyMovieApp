@@ -1,0 +1,10 @@
+<h1>Cartelera</h1>
+
+@if (movies.length > 0) {
+    <app-slide-show [movies]="moviesSlide"></app-slide-show>
+}
+<h1 class="mt-5">Peliculas</h1>
+@if (movies.length > 0) {
+    <app-peliculas-poster-grid [movies]="movies"></app-peliculas-poster-grid>
+}
+

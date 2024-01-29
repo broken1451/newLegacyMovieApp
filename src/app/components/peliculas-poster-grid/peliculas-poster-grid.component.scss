@@ -1,0 +1,32 @@
+h3{
+    font-size: 15px;
+}
+
+.poster{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+}
+
+.cont {
+    width: 93%;
+    max-width: 350px;
+    text-align: center;
+    margin: 4% auto;
+    padding: 30px 0;
+    background: #111;
+    color: #EEE;
+    border-radius: 5px;
+    border: thin solid #444;
+    overflow: hidden;
+  }
+  
+  div.stars {
+    width: 270px;
+    display: inline-block;
+  }
+  
+
+ngb-rating {
+    color: #FFC107;
+}

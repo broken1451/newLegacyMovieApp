@@ -1,0 +1,13 @@
+<!-- Slider main container -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+        @for (cast of actors; track cast.id) {
+            <div class="swiper-slide">
+                <div class="movie-description text-white">
+                    <img [src]="cast.profile_path | noImage" [alt]="cast.name" class="img-thumbnail" />
+                    <p *ngIf="cast.profile_path">{{cast.name}}</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

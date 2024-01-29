@@ -1,0 +1,19 @@
+<h1>
+    Buscar Peliculas <small>{{search}}</small>
+</h1>
+
+<hr>
+
+<div class="row">
+    <div class="col">
+        @if (movies?.length! > 0) {
+            <select class="form-select mb-3" aria-label="Default select example" (change)="onSelect($event)">
+                <option selected disabled>Open this select menu</option>
+                @for (item of numbersPage; track item.value) {
+                    <option>{{item.number}}</option>
+                }
+              </select>
+            <app-peliculas-poster-grid [movies]="movies"></app-peliculas-poster-grid>
+        }
+    </div>
+</div>
